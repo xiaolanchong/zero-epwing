@@ -17,7 +17,11 @@
  */
 
 #include <stdlib.h>
+#ifndef _MSC_VER
 #include <getopt.h>
+#else
+#include "getopt_win.h"
+#endif
 
 #include "util.h"
 #include "book.h"
